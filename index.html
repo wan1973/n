@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>title</title>
+</head>
+<body>
+<script type="text/javascript">
+for(var a=1;a<2;a++)
+{
+var str = "abcdefghijklmnopqrstuvwxyz";
+var strLen = str.length;
+var wa = "";
+for (var i = 0; i < 5; i++) {
+  wa += str[Math.floor(Math.random() * strLen)];
+}
+console.log(wa);
+document.write("https://www."+wa)
+}
+var rand = Math.floor(Math.random() * 3) + 1; 
+ if (rand == 3 ){ 
+  document.write(".com/ja-jp");
+}
+ if (rand == 2) { 
+  document.write(".net/ja-jp");
+}
+ if (rand == 1) { 
+  document.write("org");
+}
+</script>
+</body>
+</html>
